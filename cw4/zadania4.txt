@@ -1,0 +1,70 @@
+Zadanie 1.
+
+Redukt decyzyjny: {b, c, d}
+
+Zadanie 2.
+
+b=2 ∧ c=1 ∧ d=0  =>  dec=0
+b=2 ∧ c=2 ∧ d=1  =>  dec=0
+b=0 ∧ c=2 ∧ d=1  =>  dec=1
+b=2 ∧ c=1 ∧ d=1  =>  dec=2
+
+
+Po skróceniu:
+
+d=0  =>  dec=0
+b=2 ∧ c=2  =>  dec=0
+b=0  =>  dec=1
+b=2 ∧ c=1 ∧ d=1  =>  dec=2
+
+
+Zadanie 3.
+(i)
+X2 = {o5, o6, o8}
+A = {a1, a2, a3}
+
+Dolna aproksymacja:
+_X2A = φ
+
+Górna aproksymacja:
+^X2A = {o4, o5, o6, o8, o9}
+
+Opis:
+X2 jako (_X2A, ^X2A), gdzie opis dla pewnych przykładów (związane z _X2A): brak
+i opis dla możliwych przykładów (związane z ^X2A \ _X2A) to:
+(a1 = więcej niż średnia, a2 = daleki)  =>  dec = nie
+
+
+(ii)
+X1 = {o1, o2, o3, o7, o9}
+X2 = {o5, o6, o8}
+
+B = {a1, a2}
+
+Opis dla X1:
+
+Dolna aproksymacja:
+_X1B = {o1, o2, o3, o7}
+
+Górna aproksymacja:
+^X1B = {o1, o2, o3, o7, o6, o8, o9}
+
+Opis:
+X1 jako (_X1B, ^X1B), gdzie opis dla pewnych przykładów (związane z _X1B): 
+(a1 = wysoka, a2 = bliski)  =>  dec = tak
+i opis dla możliwych przykładów (związane z ^X1B \ _X1B) to:
+(a1 = więcej niż średnia, a2 = daleki)  =>  dec = tak
+
+
+Opis dla X2:
+
+Dolna aproksymacja:
+_X2B = φ
+
+Górna aproksymacja:
+^X2B = {o4, o5, o6, o8, o9}
+
+Opis:
+X2 jako (_X2B, ^X2B), gdzie opis dla pewnych przykładów (związane z _X2B): brak
+i opis dla możliwych przykładów (związane z ^X2B \ _X2B) to:
+(a1 = więcej niż średnia, a2 = daleki)  =>  dec = nie
